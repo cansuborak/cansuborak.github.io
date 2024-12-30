@@ -92,32 +92,12 @@ section {
   padding: 4rem 2rem;
 }
 
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to ensure text readability */
-  z-index: 1;
+.hero-section::before, .hero-section::after {
+  content: none;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensures content is above the overlay */
-  max-width: 800px;
-}
-
-/* CTA Button */
-.cta-btn {
-  background-color: #00bcd4; /* Bright color for the button */
-  color: white; /* Text color */
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-  background-color: #1de6fa; /* Change on hover for better interaction */
+.hero-section {
+  background: url('images/hero-background.jpg') no-repeat center center/cover; /* Correct path to your background image */
 }
 
 /* ---------------------------
