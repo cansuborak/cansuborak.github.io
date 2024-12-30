@@ -106,6 +106,13 @@ section {
   max-width: 800px;
 }
 
+.hero-section img {
+  max-width: 100%;  /* Ensures the image is never wider than its container */
+  height: auto;     /* Keeps the image's aspect ratio intact */
+  border-radius: 10px;  /* Optional: adds rounded corners to the image */
+  margin-bottom: 20px;  /* Adds space below the image */
+}
+
 /* CTA Button */
 .cta-btn {
   background-color: #00bcd4; /* Bright color for the button */
