@@ -94,7 +94,7 @@ section {
 
 .hero-section::before, .hero-section::after {
   content: none;
-
+}
 
 /* ---------------------------
    SERVICES
