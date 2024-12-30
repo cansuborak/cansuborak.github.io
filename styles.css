@@ -102,6 +102,19 @@ section {
   background: url('images/hero-background.jpg') no-repeat center center/cover; /* Correct path to your background image */
 }
 
+/* CTA Button */
+.cta-btn {
+  background-color: #00bcd4; /* Bright color for the button */
+  color: white; /* Text color */
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #1de6fa; /* Change on hover for better interaction */
+}
 
 /* ---------------------------
    SERVICES
