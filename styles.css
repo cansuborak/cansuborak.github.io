@@ -79,10 +79,9 @@ section {
 /* ---------------------------
    HERO
 ---------------------------- */
-/* HERO Section */
 .hero-section {
-  background: black; /* Solid black background */
-  color: white; /* Ensures text is white */
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
   position: relative;
   min-height: 60vh;
   display: flex;
@@ -96,7 +95,7 @@ section {
   content: "";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for better readability */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
   z-index: 0;
 }
 
@@ -106,17 +105,19 @@ section {
   max-width: 800px;
 }
 
-.hero-section img {
-  max-width: 100%;  /* Ensures the image is never wider than its container */
-  height: auto;     /* Keeps the image's aspect ratio intact */
-  border-radius: 10px;  /* Optional: adds rounded corners to the image */
-  margin-bottom: 20px;  /* Adds space below the image */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-/* CTA Button */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 .cta-btn {
-  background-color: #00bcd4; /* Bright color for the button */
-  color: white; /* Text color */
+  background-color: #00bcd4;
+  color: #121212;
   padding: 0.8rem 1.5rem;
   font-weight: 600;
   border-radius: 4px;
@@ -124,7 +125,7 @@ section {
 }
 
 .cta-btn:hover {
-  background-color: #1de6fa; /* Change on hover for better interaction */
+  background-color: #1de6fa;
 }
 
 /* ---------------------------
