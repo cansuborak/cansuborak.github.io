@@ -81,10 +81,10 @@ section {
 ---------------------------- */
 /* HERO Section */
 .hero-section {
-  background: url('images/background.png') no-repeat center center/cover; /* Adds the image as a background */
-  color: white; /* Keeps text white for readability */
+  background: black; /* Solid black background */
+  color: white; /* Ensures text is white */
   position: relative;
-  min-height: 60vh; /* Adjust height as needed */
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,14 +92,25 @@ section {
   padding: 4rem 2rem;
 }
 
-.hero-section::before, .hero-section::after {
-  content: none;
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for better readability */
+  z-index: 0;
 }
 
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
 }
 
-.hero-section {
-  background: url('images/hero-background.jpg') no-repeat center center/cover; /* Correct path to your background image */
+.hero-section img {
+  max-width: 100%;  /* Ensures the image is never wider than its container */
+  height: auto;     /* Keeps the image's aspect ratio intact */
+  border-radius: 10px;  /* Optional: adds rounded corners to the image */
+  margin-bottom: 20px;  /* Adds space below the image */
 }
 
 /* CTA Button */
