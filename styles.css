@@ -80,11 +80,15 @@ section {
    HERO
 ---------------------------- */
 .hero-section {
-  background: url('images/background.png') no-repeat center center/cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff; /* Ensuring text is white for better readability */
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
 .hero-section::before {
