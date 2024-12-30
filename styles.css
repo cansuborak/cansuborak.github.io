@@ -81,7 +81,7 @@ section {
 ---------------------------- */
 /* HERO Section */
 .hero-section {
-  background: url('images/cansu.png') no-repeat center center/cover; /* Adds the image as a background */
+  background: url('images/background.png') no-repeat center center/cover; /* Adds the image as a background */
   color: white; /* Keeps text white for readability */
   position: relative;
   min-height: 60vh; /* Adjust height as needed */
@@ -94,11 +94,7 @@ section {
 
 .hero-section::before, .hero-section::after {
   content: none;
-}
 
-.hero-section {
-  background: url('images/hero-background.jpg') no-repeat center center/cover; /* Correct path to your background image */
-}
 
 /* ---------------------------
    SERVICES
