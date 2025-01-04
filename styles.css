@@ -251,31 +251,35 @@ section {
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
-  padding-top: 1rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns children to each side */
+    padding-top: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    width: 100%; /* Ensure it spans the full width of its container */
 }
 
 .footer-bottom p {
-  color: #888;
-  font-size: 0.9rem;
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0; /* Ensure no default margins are affecting the layout */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Spaces out the social media icons */
 }
 
 .social-icons a {
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
+    color: #888; /* Sets icon color */
+    text-decoration: none; /* Removes underline from links */
 }
 
 .social-icons a:hover {
-  border-color: #1de6fa;
+    color: #1de6fa; /* Highlight color on hover */
 }
+
 
 /* ---------------------------
    MEDIA QUERIES
